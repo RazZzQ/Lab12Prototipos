@@ -6,7 +6,7 @@ public class Zombie : Enemy
 {
     private void Start()
     {
-        Type = EnemyType.ZOMBIE;
+        Type = EnemyType.ZOMBIE; 
     }
     public override void Spawn()
     {

@@ -21,13 +21,19 @@ public class GameManager : MonoBehaviour
 
         Enemy zombie = enemyFactory.CreateEnemy(EnemyType.ZOMBIE);
         zombie.Health = 100f;
+        zombie.Speed = 1.5f;
+        zombie.Damage = 1;
         zombie.Spawn();
 
         Enemy skeleton = enemyFactory.CreateEnemy(EnemyType.SKELETON);
+        skeleton.Health = 50;
         skeleton.Speed = 2.5f;
+        skeleton.Damage = 2f;
         skeleton.Spawn();
 
         Enemy demon = enemyFactory.CreateEnemy(EnemyType.DEMON);
+        demon.Health = 200;
+        demon.Speed = 5;
         demon.Damage = 50f;
         demon.Spawn();
     }
